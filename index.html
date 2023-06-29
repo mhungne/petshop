@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <div class="grid wide">
+                <div class="header-with_search">
+                    <div class="header__logo">
+                        <a href="/">
+                            <img class="header__logo-img" src="./assets/img/logo/logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Thức ăn cho chó</a>
+                                    </li>
+
+                                    <li class="header__search-history-item">
+                                        <a href="">Thức ăn cho mèo</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            Tìm kiếm
+                        </button>
+                    </div>
+
+                    <div class="header__search-select">
+                        <div class="header__search-select-item">
+                            <a class="header__search-select-list" href="/">
+                                <i class="header__search-item-icon fa-solid fa-house"></i>
+                                Trang chủ
+                            </a>
+                        </div>
+    
+                        <div class="header__search-select-item">
+                            <button class="header__search-select-item-btn js-account">
+                                <i class="header__search-item-icon fa-solid fa-user"></i>
+                                Tài khoản
+                            </button>
+                        </div>
+                        
+                        <div class="header__search-select-item header__cart">
+                            <div class="header__cart-wrap ">
+                               <div class="header__search-select-list">
+                                    <i class="header__search-item-icon fa-solid fa-cart-shopping"></i>
+                                    Giỏ Hàng
+                               </div>
+
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no-cart/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-no-cart-msg">Chưa có sản phẩm </span>
+                                    <h4 class="header__cart-heading">Sản phẩm đã được thêm</h4>
+
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Hạt cho chó Royal Canin Bulldog Puppy 3kg
+                                                    </h5>
+
+                                                    <div class="header__cart-item-price">
+                                                        <span class="header__cart-item-price">1.000</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quatily">1</span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-remove">Xoá</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a class="header__cart-view-cart" href="">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="menu">
+           <ul class="menu-list">
+
+                <li class="menu-item"><a href="#the-dog">Chó Cảnh</a></li>
+                <li class="menu-item"><a href="#the-cat">Mèo cảnh</a></li>
+                <li class="menu-item">
+                    <a href="">Mua chó</a>
+                    <i class="icon-down fa-solid fa-chevron-down"></i>
+                    <div class="item-container">
+                        <ul class="item-container-list item-list">
+                            <li class="container-list__item"><a href="">Chó Husky</a></li>
+                            <li class="container-list__item"><a href="">Chó Shiba</a></li>
+                            <li class="container-list__item"><a href="">Chó Akita</a></li>
+                            <li class="container-list__item"><a href="">Chó Alabai</a></li>
+                            <li class="container-list__item"><a href="">Chó Alaska</a></li>
+                            <li class="container-list__item"><a href="">Chó Basenji</a></li>
+                            <li class="container-list__item"><a href="">Chó Baset hound</a></li>
+                            <li class="container-list__item"><a href="">Chó Bắc Hà</a></li>
+                            <li class="container-list__item"><a href="">Chó Becgie</a></li>
+                            <li class="container-list__item"><a href="">Chó Beagle</a></li>
+                            <li class="container-list__item"><a href="">Chó Bichon</a></li>
+                            <li class="container-list__item "><a href="">Chó Border collie</a></li>
+                        </ul>
+
+                        <ul class="item-container-list item-list">
+                            <li class="container-list__item"><a href="">Chó Bull Pháp</a></li>
+                            <li class="container-list__item"><a href="">Chó Bulldog Anh</a></li>
+                            <li class="container-list__item"><a href="">Chó corgi</a></li>
+                            <li class="container-list__item"><a href="">Cane Corso</a></li>
+                            <li class="container-list__item"><a href="">Caucasian ovcharka</a></li>
+                            <li class="container-list__item"><a href="">Chó Chihuahua</a></li>
+                            <li class="container-list__item"><a href="">Chó Chow Chow</a></li>
+                            <li class="container-list__item"><a href="">Chó golden</a></li>
+                            <li class="container-list__item"><a href="">Chó H'Mong Cộc</a></li>
+                            <li class="container-list__item"><a href="">Chó Labrador</a></li>
+                            <li class="container-list__item"><a href="">Chó lạp xưởng</a></li>
+                            <li class="container-list__item"><a href="">Chó sanit bernard</a></li>
+                        </ul>
+
+                        <ul class="item-container-list item-list">
+                            <li class="container-list__item"><a href="">Chó Samoyed</a></li>
+                            <li class="container-list__item"><a href="">Chó poodle</a></li>
+                            <li class="container-list__item"><a href="">Chó pug</a></li>
+                            <li class="container-list__item"><a href="">Chó Phốc hươu</a></li>
+                            <li class="container-list__item"><a href="">Chó rottweiler</a></li>
+                            <li class="container-list__item"><a href="">Chó pitbull</a></li>
+                            <li class="container-list__item"><a href="">Chó phú quốc</a></li>
+                            <li class="container-list__item"><a href="">Chó malinois</a></li>
+                            <li class="container-list__item"><a href="">Chó doberman</a></li>
+                            <li class="container-list__item"><a href="">Chó Bully</a></li>
+                            <li class="container-list__item"><a href="">Chó yorkshire</a></li>
+                            <li class="container-list__item"><a href="">Chó schnauzer</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <a href="">Mua mèo</a>
+                    <i class="icon-down fa-solid fa-chevron-down"></i>
+                    <div class="item-container">
+                        <ul class="item-container-list">
+                            <li class="container-list__item container-list__item-msg"><a href="">Mèo anh lông ngắn</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Mèo anh lông dài</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Mèo Ba Tư</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Mèo BenGal</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Munchkin</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Mèo scottish tai cụp</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Xiêm</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Mèo Ragdoll</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Mèo maine coon</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Spinx không lông</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Mèo Toyger</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <a href="">Đồ cho chó</a>
+                    <i class="icon-down fa-solid fa-chevron-down"></i>
+                    <div class="item-container">
+                        <ul class="item-container-list">
+                            <li class="container-list__item container-list__item-msg"><a href="#accessory">Vật dụng ăn uống cho chó</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#food">Thức ăn cho chó</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#accessory">Vòng cổ, dây dắt, rọ mõm</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#accessory">Quần áo cho chó</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#the-house">Chuồng chó</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#drug">Y tế và thuốc cho chó</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#accessory">Đồ chơi và phụ kiện huấn luyện</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <a href="">Đồ cho mèo</a>
+                    <i class="icon-down fa-solid fa-chevron-down"></i>
+                    <div class="item-container">
+                        <ul class="item-container-list">
+                            <li class="container-list__item container-list__item-msg"><a href="">Cát vệ sinh cho mèo</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#food">Thức ăn cho mèo</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#the-house">Nhà cho mèo</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="#drug">Thuốc thú y mèo</a></li>
+                            <li class="container-list__item container-list__item-msg"><a href="">Chăm sóc mèo</a></li>
+
+                        </ul>
+                    </div>                  
+                </li>
+           </ul>
+        </div>
+
+
+
+        <div id="food" class="content">
+            <div class="grid wide">
+                <div class="content-heading">
+                    <b></b>
+                    <span class="content-heading-text">Thức ăn chó mèo</span>
+                    <b></b>
+                </div>
+
+                <div class="row">
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/banh.jpg);"></div>
+                                <span class="content-body-name">Bánh thưởng cho chó hình xương Orgo Endi Chews Dental Flavor 100g</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">34.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+                    
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/HAT-CHO-CHO-ROYAL-BULLDOG-3KG-400x400.png);"></div>
+                                <span class="content-body-name">Hạt cho chó Royal Canin Bulldog Puppy 3kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">734.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/HAT-CHO-CHO-X-SMALL-PUPPY-1KG-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho chó Royal Canin X-Small Puppy 1,5kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">177.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/Pate-cho-cho-Monge-vi-thit-ga-tay-va-qua-viet-quat-100g-1-400x400.png);"></div>
+                                <span class="content-body-name">Pate cho chó Monge vị gà tây & việt quất 100g</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">35.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/pate-cho-cho-monge-vi-thit-vit-va-cam-100g-1-400x400.jpg);"></div>
+                                <span class="content-body-name">Pate cho chó Monge vị thịt vịt và cam 100g</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">35.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/pate-cho-cho-moochie-vi-bo-ham-85g-1-400x400.jpg);"></div>
+                                <span class="content-body-name">Pate cho chó vị bò hầm 120g</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">84.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/banh-thuong-cho-cho-hinh-xuong-gam-kanoodles-cham-soc-rang-mieng-size-m-6-400x400.jpg);"></div>
+                                <span class="content-body-name">Bánh thưởng cho chó hình xương Kanoodles chăm sóc răng miệng</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">15.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/pate.jpg);"></div>
+                                <span class="content-body-name">Pate chó vị thịt vịt</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">34.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/thuc-an-hat-cho-cho-royal-canin-mini-puppy-500g-1-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho chó Royal Canin Mini Puppy 500g (chiết)</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">95.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div> 
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/royal-canin-shn-xsmall-puppy-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho chó Royal Canin X-Small Puppy 500g</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">158.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/sua-bot-cho-cho-royal-canin-baby-dog-milk-9-400x400.jpg);"></div>
+                                <span class="content-body-name">Sữa cho chó Royal Canin Baby Dog Milk cho chó con 400gr</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">677.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/thuc-an-cho-cho-co-nho-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho chó Royal Canin X-Small Adult 1,5 kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">405.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/dog_food/thucancho.jpg);"></div>
+                                <span class="content-body-name">Hạt cho chó Royal Canin X-Small Puppy 500g</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">708.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/cat_food/HAT-CHO-MEO-ROYAL-DUONG-DA-LONG-2KG-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho mèo Royal Canin Hair & Skin chăm sóc da lông 2kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">208.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/cat_food/HAT-CHO-MEO-ROYAL-DUONG-DA-LONG-400G-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho mèo Royal Canin Hair & Skin chăm sóc da lông 400gr</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">558.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/cat_food/hat-royal-canin-aln-5-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho mèo Royal Canin Adult British Shorthair mèo Anh lông ngắn trưởng thành 400g</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">138.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/cat_food/hat-royal-canin-indoor-1-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho mèo Royal Canin Indoor Adult mèo lớn ít vận động 2kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">512.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/cat_food/royal-canin-hair-ball-care-2-kg-4-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho mèo Royal Canin Hairball Care 2kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">556.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/cat_food/royal-canin-meo-aln-con-6-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho mèo Royal Canin Kitten Brishtish Shorthair mèo Anh lông ngắn con 2kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">592.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/content/cat_food/HAT-CHO-MEO-ROYAL-FIT-400x400.jpg);"></div>
+                                <span class="content-body-name">Hạt cho mèo Royal Canin Regular Fit32 2kg
+                                </span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">521.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                
+                
+                
+                
+            </div>
+
+            <div id="accessory" class="grid wide content__list">
+                <div class="content-heading">
+                    <b></b>
+                    <span class="content-heading-text">Phụ kiện chó mèo</span>
+                    <b></b>
+                </div>
+
+                <div class="row">
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/chuong-cho-cho-meo-nhieu-sac-mau-400x400.jpg);"></div>
+                                <span class="content-body-name">Chuông cho chó mèo nhiều sắc màu</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">50.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+                    
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/msg-684918299-928-400x400.jpg);"></div>
+                                <span class="content-body-name">Đồ chơi bóng mặt chó size L</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">45.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/msg-684918299-922-400x400.jpg);"></div>
+                                <span class="content-body-name">Đồ chơi xương gặm in hình bàn chân</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">35.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/msg-684918299-943-400x400.jpg);"></div>
+                                <span class="content-body-name">Đồ chơi bóng in hình bàn chân size M</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">25.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/chup_bao_ve_khi_dung_thuoc-400x400.jpg);"></div>
+                                <span class="content-body-name">Chụp bảo vệ khi dùng thuốc</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">95.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/day_dat_kem_vong_co_in_hinh-400x400.jpg);"></div>
+                                <span class="content-body-name">Dây dắt kèm vòng cổ in hình 2cm</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">64.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/day-dat-hoa-tiet-cham-bi-400x400.jpg);"></div>
+                                <span class="content-body-name">Dây dắt yếm đỏ họa tiết chấm bi 1cm</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">45.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/day_dat_yem_police_25mm-400x400.jpg);"></div>
+                                <span class="content-body-name">Dây dắt Yếm Police 6cm</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">84.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/day_dat_yem_tron-400x400.jpg);"></div>
+                                <span class="content-body-name">Petstar – Dây dắt yếm tròn 10*120cm</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">95.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div> 
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/vong-co-dom-da-bo-400x400.jpg);"></div>
+                                <span class="content-body-name">Vòng cổ khóa in hình đốm 1 cm</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">28.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/phukien/vong-co-luc-lac-cac-hinh-400x400.jpg);"></div>
+                                <span class="content-body-name">Vòng cổ lục lạc các hình cho chó mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">13.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/msg-684918299-905-400x400.jpg);"></div>
+                                <span class="content-body-name">Áo đánh đàn cho chó mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">295.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/mu-cho-cho-meo-ambaby-pet-1jxs071.jpg);"></div>
+                                <span class="content-body-name">Mũ cho chó mèo AMBABY PET 1JXS071</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">155.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/mu-cho-cho-meo-ambaby-pet-1jxs081-400x400.jpg);"></div>
+                                <span class="content-body-name">Mũ cho chó mèo AMBABY PET 1JXS081</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">155.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/quan-ao-cho-cho-meo-ambaby-pet-2jxf164-400x400.jpg);"></div>
+                                <span class="content-body-name">Quần áo cho chó mèo AMBABY PET 2JXF164</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/quan-ao-cho-cho-meo-ambaby-pet-2jxf163-400x400.jpg);"></div>
+                                <span class="content-body-name">Quần áo cho chó mèo AMBABY PET 2JXF163</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/quan-ao-cho-cho-meo-ambaby-pet-2jxf171-400x400.jpg);"></div>
+                                <span class="content-body-name">Quần áo cho chó mèo AMBABY PET 2JXF171</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/bang-ten-cho-cho-meo-400x400.jpg);"></div>
+                                <span class="content-body-name">Bảng tên chó mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">56.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/quan-ao-cho-cho-meo-ambaby-pet-2jxf247-400x400.jpg);"></div>
+                                <span class="content-body-name">Quần áo cho chó mèo AMBABY PET 2JXF247</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/quan-ao-cho-cho-meo-ambaby-pet-2jxf246-400x400.jpg);"></div>
+                                <span class="content-body-name">Quần áo cho chó mèo AMBABY PET 2JXF246
+                                </span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/accessory/quanao/quan-ao-cho-cho-meo-ambaby-pet-2jxf216-400x400.jpg);"></div>
+                                <span class="content-body-name">Quần áo cho chó mèo AMBABY PET 2JXF216
+                                </span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                
+
+                
+            </div>
+
+            <div id="drug" class="grid wide content__list">
+                <div class="content-heading">
+                    <b></b>
+                    <span class="content-heading-text">Thuốc thú y</span>
+                    <b></b>
+                </div>
+
+                <div class="row">
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/TPCN-NO.18-VITAMIN-CHO-MEO.jpg);"></div>
+                                <span class="content-body-name">Vitamin Cho Mèo NO.18 – Tim mạch, tránh bệnh thoái hoá võng mạc ở mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">250.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+                    
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/canxi-nano-cho-meo-1-400x400.jpg);"></div>
+                                <span class="content-body-name">Canxi Nano Chó Mèo – Hộp 150 viên</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">145.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/men-bio-tri-oi-mua-5-400x400.jpg);"></div>
+                                <span class="content-body-name">Men Bio – scour w.s.p trị ói mửa, tiêu chảy chó mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">135.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/NHO-GAY-REVOLUTION-TRI-VE-RAN-GIUN-400x400.jpg);"></div>
+                                <span class="content-body-name">Tuýp nhỏ gáy Revolution Mỹ giúp trị ve, rận, bọ chét, giun tim cho chó mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">95.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/que-test-pravo-fpv-ag-test-cho-meo-4-400x400.jpg);"></div>
+                                <span class="content-body-name">Que test giảm bạch cầu cho mèo FPV Ag Test (màu Tím)c</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">95.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/thuoc-dexoryl-tri-viem-tai-cho-meo-5-400x400.jpg);"></div>
+                                <span class="content-body-name">Thuốc Dexoryl trị viêm tai chó, mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">164.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/TPCN-MEGADERM-DUONG-DA-LONG-400x400.jpg);"></div>
+                                <span class="content-body-name">Gel Dinh Dưỡng Virbac Megaderm 4ml Giúp Mượt Lông, Da Và Giảm Ngứa Chó Mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/tpcn-vita-hemo-ho-tro-tao-mau-cho-cho-meo-5-400x400.jpg);"></div>
+                                <span class="content-body-name">TPCN Vita Hemo hỗ trợ tạo máu cho chó mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">584.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/NEXGARD-25-50KG-400x400.jpg);"></div>
+                                <span class="content-body-name">Thuốc trị ve rận ghẻ Nexgard dạng viên cho chó 25-50kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">395.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div> 
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/vitamin-cho-meo-no-29-2-400x400.jpg);"></div>
+                                <span class="content-body-name">Vitamin Cho Mèo No.29 – Tiêu búi lông trong dạ dày</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">128.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug/votamin-cho-meo-no-28-5-400x400.jpg);"></div>
+                                <span class="content-body-name">Vitamin Cho Mèo No.28 – Bảo vệ và phục hồi bàng quang, đường tiết niệu</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">213.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/DUONG-LONG-POODLE-400x400.jpg);"></div>
+                                <span class="content-body-name">TPCN dưỡng lông Vegebrand Poodle Hair Beauty 450g</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">295.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/Nex-Gard-35-75-kg-2-400x400.jpg);"></div>
+                                <span class="content-body-name">NexGard Spectra trị bọ chét, ve, trị giun đũa giun tim dành cho chó từ 3,5-7,5kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">155.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/que-test-benh-pravo-cho-cho-7-400x400.jpg);"></div>
+                                <span class="content-body-name">Que test bệnh Pravo cho Chó CPV Ag Test (màu Xanh lá)</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">155.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/Thuoc-vien-nexgard-tri-ve-cho-cho-2-4kg-400x400.jpg);"></div>
+                                <span class="content-body-name">Thuốc trị ve rận ghẻ Nexgard dạng viên cho chó 2-4kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/thuoc-tay-giun-drontal-1-400x400.jpg);"></div>
+                                <span class="content-body-name">Thuốc tẩy giun cho chó Drontal Dog Tasty Bone</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/THUOC-XIT-NAM-RAN-MITECYN-400x400.jpg);"></div>
+                                <span class="content-body-name">Thuốc Dexoryl trị viêm tai chó, mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/thuoc-nho-tai-dexoryl-400x400.jpg);"></div>
+                                <span class="content-body-name">Thuốc trị viêm tai Dexoryl cho chó mèo</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">56.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/thuoc-tri-ve-ran-frontline-plus-nho-lung-cho-20-40kg-400x340.jpg);"></div>
+                                <span class="content-body-name">Thuốc trị ve rận Frontline plus nhỏ gáy cho chó từ 20-40kg</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/drug__dog/25-40kg-352x400.png);"></div>
+                                <span class="content-body-name">Thuốc trị giun, ve nhỏ gáy advocate cho chó 25-50kg
+                                </span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                
+                </div>
+                
+
+                
+            </div>
+
+            <div id="the-house" class="grid wide content__list">
+                <div class="content-heading">
+                    <b></b>
+                    <span class="content-heading-text">Nhà chó mèo</span>
+                    <b></b>
+                </div>
+
+                <div class="row">
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/ban-cao-mong-cho-meo-kem-o-qq80337-400x400.jpg);"></div>
+                                <span class="content-body-name">Bàn cào móng cho mèo kèm ổ QQ80337</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">300.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+                    
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-80003-1-510x510-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree 80003</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">300.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-80324-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree 80324</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">755.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-bobo-f3019-510x510-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree BoBo F3019</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">795.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-bobo-f3031-510x510-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree BoBo F3031</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">1.195.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-bobo-f3032-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree BoBo F3032</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">1.164.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-d1-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree D1</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">700.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-d2-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree D2</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">584.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-d8-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree D8</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">1.195.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div> 
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-d9-510x510-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree D9</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">550.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-cat-tree-ds706-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Cat Tree DS706</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">3.213.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/cat_house/nha-cay-cho-meo-luxury-cat-tree-dct1009-510x511-400x400.jpg);"></div>
+                                <span class="content-body-name">Nhà cây cho mèo Luxury Cat Tree DCT1009</span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">3.295.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/house/dog_house/chuong-cho-inox-golden-retriever-400x400.jpg);"></div>
+                                <span class="content-body-name">Chuồng chó inox đẹp, giá rẻ đang bán tại Dogily Petshop Tphcm và Hà Nội.
+                                </span>
+                            </a>
+                            <div class="content-body-price-item">
+                                <span class="content-body-price">3.245.000 đ</span>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                
+                </div>
+                
+
+                
+            </div>
+
+            <div class="grid wide content__list">
+                <div class="content-heading">
+                    <b></b>
+                    <span class="content-heading-text">Dịch vụ thú cưng</span>
+                    <b></b>
+                </div>
+
+                <div class="row">
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/service/spa-grooming-dogily-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Spa chó mèo</span>
+                                <span class="content__time">Liên hệ đặt lịch</span>
+                            </a>                         
+
+                        </div>
+                    </div>    
+                    
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/service/huong-dan-cach-tam-cho-cho-corgi-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Tắm chó mèo</span>
+                                <span class="content__time">Liên hệ đặt lịch</span>
+
+                            </a>
+                            
+
+                        </div>
+                    </div>  
+                    
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/service/cao-long-cho-vung-mat.jpg);"></div>
+                                <span class="content-body-name content__name">Cạo lông chó</span>
+                                <span class="content__time">Liên hệ đặt lịch</span>
+
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/service/kinh-nghiem-cat-tia-mong-chan-cho-cho-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Cắt móng chân</span>
+                                <span class="content__time">Liên hệ đặt lịch</span>
+
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/service/Nen-cao-long-meo-khi-troi-oi-buc-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Cạo lông mèo</span>
+                                <span class="content__time">Liên hệ đặt lịch</span>
+
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/service/6983a845-image.jpeg);"></div>
+                                <span class="content-body-name content__name">Cắt tỉa lông chó</span>
+                                <span class="content__time">Liên hệ đặt lịch</span>
+
+                            </a>
+                            
+
+                        </div>
+                    </div>
+                
+                </div>
+                
+
+                
+            </div>
+
+            <div id="the-dog" class="grid wide content__list">
+                <div class="content-heading">
+                    <b></b>
+                    <span class="content-heading-text">Giống chó cảnh</span>
+                    <b></b>
+                </div>
+
+                <div class="row">
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/bo-doi-shih-tzu-3-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó Shih Tzu</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+
+                            </a>                         
+
+                        </div>
+                    </div>    
+                    
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/boxer-duc-1-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Boxer</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+
+                            </a>
+                            
+                           
+                        </div>
+                    </div>  
+                    
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-alaska-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó alaska</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-bac-ha-mau-den-27-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó bắc hà</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-basset-hound-2-thang-tuoi-6-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Basset ound</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-beagle-tricolor-duc-4-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó BenGal</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-becgie-gsd-duc-2-thang-tuoi-thuan-chung-8-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Becgie</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-bichon-trang-cai-7-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó Bichon</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+                    
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-bull-phap-duc-mau-den-3-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó Bull Pháp</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-Bulldog-dogily-petshop-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Bulldog</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/Cho-bully-con-tai-dogily-petshop-23456-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Bully</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-chihuahua-mau-bo-sua-duc-30-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó Chihuahua</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-chow-chow-con-2-thang-tuoi-23-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Chow Chow</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-golden-retriever-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó golden</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-mong-coc-den-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó H'Mong Cộc</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-phoc-huou-den-do-duc-11-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó Phốc huơu</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-phoc-soc-vang-duc-day-du-giay-vka-2-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó phốc sóc</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-phu-quoc-ven-vang-duc-9-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó Phú Quốc</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-poodle-teacup-mau-trang-cai-9-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó poodle</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-pug-mat-xe-05-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó pug</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/Cho-Saint-bernard-vang-trang-Dogily-Petshop-5-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó sanit bernard</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-schnauzer-den-trang-6-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó schnauzer</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/cho-yorkshire-dogilypetshop-4-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó yorkshire</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/corgi-vang-trang-duc-4-400x400.png);"></div>
+                                <span class="content-body-name content__name">Chó corgi</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/dan-3-cho-shiba-inu-mai-vang-trang-2-thang-tuoi-1-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Shiba</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/dan-cho-border-collie-thuan-chung-3-thang-tuoi-5-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó collie</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/husky-cai-3-thang-11-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Husky</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/malinois-becgie-bi-3-thang-nhap-khau-2-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó malinois</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/pitbull-3-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó pitbull</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/dog/samoyed-trang-cai-12-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Chó Samoyed</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+
+            <div id="the-cat" class="grid wide content__list">
+                <div class="content-heading">
+                    <b></b>
+                    <span class="content-heading-text">Giống mèo cảnh</span>
+                    <b></b>
+                </div>
+
+                <div class="row">
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-ald-trang-tai-cup-cai-8-400x400.png);"></div>
+                                <span class="content-body-name content__name">Mèo scottish tai cụp</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-anh-long-dai-de-thuong-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Mèo anh lông dài</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-anh-long-ngan-xam-xanh-truong-thanh-scaled-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Mèo anh lông ngắn</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-ba-tu-duc-dogily-3-thang-3-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Mèo Ba tư</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-bengal-duc-1-400x400.png);"></div>
+                                <span class="content-body-name content__name">Mèo BenGal</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-maine-coon-mau-vang-trang-6-thang-tuoi-11-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Mèo maine coon</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-munchkin-bicolor-4-thang-10-1-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Mèo Munchkin</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-toyger-duoc-nhan-giong-tu-bengal-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Mèo Toyger</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/Meo-Sphynx-dogily-petshop-2-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Mèo không lông sphynx</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="content-body">
+                            <a href="">
+                                <div class="content-body-img" style="background-image: url(./assets/img/animal/cat/meo-xiem-4-400x400.jpg);"></div>
+                                <span class="content-body-name content__name">Mèo xiêm</span>
+                                <span class="content__time">Liên hệ với chúng tôi</span>
+                            </a>                         
+
+                        </div>
+                    </div>
+                
+                </div>
+                
+
+                
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3">
+                        <div class="footer-container">
+                            <h3 class="footer-container-heading">PetShop</h3>
+                            <p class="footer-container-heading-msg">PetShop là 1 sản phẩm project demo.
+                                <span>Không nhằm mục đích giả mạo hay thay thế bất kỳ 1 trang web nào !!</span>
+                            </p>
+
+                            <p class="footer-container-heading-msg">
+                                Đây là sản phẩm đâu tiên sau quá trình tự học nên còn nhiều sai sót. Trong quá trình còn nhiều lỗi phát sinh, mong nhận được ý kiến của mọi người để <a href="https://www.facebook.com/mhung.2404">mình</a> hoàn thiện hơn. Thanks mọi người love
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col l-3">
+                        <h3 class="footer-container-heading">Thông tin chi tiết</h3>
+                        <p></p>
+                    </div>
+
+                    <div class="col l-3">
+                        <h3 class="footer-container-heading">Thông tin thanh toán</h3>
+                        <div class="footer-container-img">
+                            <a href="">
+                                <img src="./assets/img/pay/vcb.png" alt="" class="footer__img">
+
+                            </a>
+                        </div>
+
+                        <div class="footer-container-img">
+                            <a href="">
+                                <img src="./assets/img/pay/MoMo_Logo.png" alt="" class="footer__img momo">
+                                <span class="footer__img-text">Momo</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col l-3">
+                        <h3 class="footer-container-heading">Kết nối với tôi</h3>
+                        <div class="footer-connect">
+                            <a href="https://www.facebook.com/mhung.2404" class="footer-connect-link">
+                                <img src="./assets/img/connect/facebook-a630369a.svg" alt="" class="footer-connect-img">                              
+                            </a>
+
+                            <a href="https://www.instagram.com/hung240403/" class="footer-connect-link">
+                                <img src="./assets/img/connect/instagram-ccabf478.svg" alt="" class="footer-connect-img">
+                            </a>
+                           
+                        </div>
+                    </div>
+                                            
+                </div>
+            </div>
+        </div>
+
+        <div class="modal js-modal">
+            <div class="modal__overlay">
+
+            </div>
+
+            <div class="modal__body ">
+                <div class="auth-form js-body">
+                    <div class="auth-form-close js-close">
+                        <i class="auth-form-close-icon fa-solid fa-x"></i>
+                    </div>
+
+                    <div class="auth-form__container ">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__heading-sub js-login">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__group">
+                        <input class="auth-form__input" type="text" placeholder="Email của bạn" required>
+                    </div>
+                    
+                    <div class="auth-form__group">
+                        <input class="auth-form__input" type="password" placeholder="Mật khẩu của bạn" required>
+                    </div>
+
+                    <div class="auth-form__group">
+                        <input class="auth-form__input" type="password" placeholder="Nhập lại mật khẩu">
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form_policy-text">Bằng với việc đăng ký, bạn đồng ý với chúng tôi về
+                            <a class="auth-form__link" href="">Điều khoản và dịch vụ</a>
+                            &
+                            <a class="auth-form__link" href="">Chính sách và bảo mật</a>
+                    </p>
+                    </div>
+
+
+                    <div class="auth-form__control">
+                        <button class="btn btn__primary">Đăng ký</button>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <h2 class="auth-form__socials-heading" >Or</h2>
+                        <span class="auth-form__socials-heading-sub">Đăng nhập bằng</span>
+
+                        <div class="auth-form__socials-list">
+                            <div class=" auth-form__socials-list-wrap">
+                                <a href="" class="auth-form__socials-items">
+                                    <i class="face auth-form__socials-icon fa-brands fa-facebook"></i>
+                                </a>
+                            </div>
+
+                            <div class="auth-form__socials-list-wrap">
+                                <a href="" class="auth-form__socials-items">
+                                    <i class="inta auth-form__socials-icon fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="auth-form__socials-list-wrap">
+                                <a href="" class="auth-form__socials-items">
+                                    <i class="gg auth-form__socials-icon fa-brands fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="auth-form auth-form__login">
+                    <div class="auth-form-close js-close">
+                        <i class="auth-form-close-icon fa-solid fa-x"></i>
+                    </div>
+
+                    <div class="auth-form__container">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__heading-sub">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__group">
+                        <input class="auth-form__input" type="text" placeholder="Email của bạn" required>
+                    </div>
+                    
+                    <div class="auth-form__group">
+                        <input class="auth-form__input" type="password" placeholder="Mật khẩu của bạn">
+                    </div>
+
+                    <div class="auth-form__function">
+                        <div class="auth-form-remember">
+                            <input type="checkbox" >
+                            <label  class="auth-form-remember-text"> Nhớ mật khẩu</label>
+                        </div>
+
+                        <div class="auth-form__forgot">
+                            <a href="">Quên mật khẩu ?</a>
+                        </div>
+                    </div>
+                  
+
+
+
+                    <div class="auth-form__control">
+                        <button class="btn btn__primary">Đăng nhập</button>
+                    </div>
+
+                    <div class="auth-form__no-account">
+                        <p>Bạn chưa có tài khoản <a href="">Đăng ký</a>  tại đây</p>
+                        
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <h2 class="auth-form__socials-heading" >Or</h2>
+                        <span class="auth-form__socials-heading-sub">Đăng nhập bằng</span>
+
+                        <div class="auth-form__socials-list">
+                            <div class=" auth-form__socials-list-wrap">
+                                <a href="" class="auth-form__socials-items">
+                                    <i class="face auth-form__socials-icon fa-brands fa-facebook"></i>
+                                </a>
+                            </div>
+
+                            <div class="auth-form__socials-list-wrap">
+                                <a href="" class="auth-form__socials-items">
+                                    <i class="inta auth-form__socials-icon fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="auth-form__socials-list-wrap">
+                                <a href="" class="auth-form__socials-items">
+                                    <i class="gg auth-form__socials-icon fa-brands fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
